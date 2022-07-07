@@ -1,0 +1,152 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 532602396,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "user navigates to \"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2736882458,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 21405387,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SmartBearSteps.setup()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Validate invalid login attempt",
+        "description": "",
+        "id": "smartbear-invalid-login-validation;validate-invalid-login-attempt",
+        "after": [
+          {
+            "result": {
+              "duration": 3106985899,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 80733559,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username as \"abcd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abcd\"",
+                  "offset": 24
+                }
+              ],
+              "location": "SmartBearSteps.user_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54049250,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user enters password as \"abcd1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"abcd1234\"",
+                  "offset": 24
+                }
+              ],
+              "location": "SmartBearSteps.user_enters_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 114534904,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks on Login button",
+            "match": {
+              "location": "SmartBearSteps.user_clicks_on_Login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46657100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user should see \"Invalid Login or Password.\" Message",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Invalid Login or Password.\"",
+                  "offset": 16
+                }
+              ],
+              "location": "SmartBearSteps.user_should_see_Message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "SmartBear Invalid login Validation",
+    "description": "",
+    "id": "smartbear-invalid-login-validation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/smartbear.feature",
+    "tags": []
+  }
+]
